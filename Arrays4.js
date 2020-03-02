@@ -24,5 +24,3 @@ console.log(topSongs);
 // Adds an item at the beginning of the array
 topSongs.unshift("Twist and Shout");
 console.log(topSongs);
-
-
