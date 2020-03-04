@@ -13,9 +13,18 @@ let foes = [
     "Judith"
 ]
 
-// Concat does not update the array in place
-let everyone = friends.concat(foes)
+let norFriendsOrFoes = ["Miguel", "Luis", "Kia"]
 
-for (let i=0; i<everyone.length - 1; i++){
-    console.log(everyone[i])
+// Concat does not update the array in place
+let everyone = friends.concat(foes, norFriendsOrFoes)
+
+function displayArray(anArray){
+    for (let i=0; i<anArray.length; i++){
+        console.log(anArray[i]);
+    }
+    console.log()
 }
+
+displayArray(friends);
+displayArray(foes);
+displayArray(everyone);
